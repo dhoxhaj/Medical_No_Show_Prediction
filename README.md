@@ -1,10 +1,10 @@
-## Medical Appointment No-Show Prediction
-# 1. Introduction
+# Medical Appointment No-Show Prediction
+## 1. Introduction
 Missed medical appointments, or no-shows, cause significant inefficiencies in healthcare systems worldwide, leading to wasted resources and delayed care. In Brazil's public healthcare system, addressing no-shows is critical to improve service delivery and access.
 This project uses machine learning models to predict patient no-shows based on demographics, medical history, and appointment details, enabling proactive interventions like reminders or rescheduling.
 We work with the Medical Appointment No-Shows dataset from Kaggle, containing over 110,000 records. The target is imbalanced: approximately 20% no-shows.
 
-# 2. Feature Overview
+## 2. Feature Overview
 
 Original Features
 
@@ -20,7 +20,7 @@ AppointmentWeekday: Weekday of appointment
 ScheduledWeekday: Weekday of scheduling
 IsWeekendAppointment: Boolean if appointment on weekend
 
-# 3. Data Preprocessing
+## 3. Data Preprocessing
 
 Removed irrelevant columns (PatientId, AppointmentID, ScheduledDay).
 Transformed target to binary (NoShow: 1 = no-show, 0 = attended).
@@ -29,7 +29,7 @@ One-hot encoded categorical variables.
 Scaled numerical features using StandardScaler.
 Balanced training set with SMOTE after train-test split to avoid leakage.
 
-# 4. Modeling Pipeline
+## 4. Modeling Pipeline
 The project focuses on four main machine learning models implemented in the /src folder:
 
 4.1 Feedforward Neural Network (FFNN)
@@ -57,26 +57,26 @@ Regularization tuned via hyperparameter C.
 Feature scaling applied.
 Cross-validation for performance validation.
 
-# 5. Evaluation
+## 5. Evaluation
 
 Confusion matrices and classification reports for detailed class-wise performance.
 Metrics: Accuracy, Precision, Recall, F1-score.
 Cross-validation used to estimate model generalization.
 Visualization of confusion matrices and metric bar plots included.
 
-# 6. Software and Tools
+## 6. Software and Tools
 
 Python 3.12
 VS Code for development and testing.
 Libraries: pandas, numpy, scikit-learn, imbalanced-learn, tensorflow, matplotlib, seaborn
 Google Colab used during initial experimentation for scalability and GPU support.
 
-# 7. Usage
+## 7. Usage
 
 Place your dataset preprocessed_dataset.csv inside the /Data folder. Each model script in /src reads this file, performs preprocessing, trains the model, evaluates, and outputs performance metrics and plots.
 To run any model, execute the corresponding Python script in the /src folder
 
-8. Acknowledgements & References
+## 8. Acknowledgements & References
 
 Dataset from Kaggle: Medical Appointment No-Shows
 Inspired by various machine learning studies on no-show prediction, including Random Forest and ensemble methods.
