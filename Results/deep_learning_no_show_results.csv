@@ -1,0 +1,10 @@
+Test,Description,Accuracy,Precision_0,Recall_0,F1_0,Precision_1,Recall_1,F1_1
+Test 1,"Base model - 2 hidden layers, 50 epochs",0.7293,0.84,0.81,0.83,0.35,0.39,0.37
+Test 2,DNN with 10 hidden layers,0.633,0.89,0.61,0.73,0.32,0.71,0.44
+Test 3,Different units per hidden layer,0.7816,0.8,0.97,0.88,0.27,0.05,0.08
+Test 4,Dropout rate changed to 0.5,0.2409,0.82,0.06,0.12,0.2,0.94,0.33
+Test 5,Added batch normalization,0.2238,0.86,0.03,0.06,0.2,0.98,0.34
+Test 6,DNN with 50 hidden layers,0.7981,0.8,1.0,0.89,0.0,0.0,0.0
+Test 7,DNN with 30 hidden layers,0.5389,0.93,0.45,0.61,0.29,0.87,0.43
+Test 8,DNN with 15 hidden layers,0.5328,0.94,0.44,0.6,0.29,0.9,0.44
+Test 9,DNN with 40 hidden layers,0.2265,0.96,0.03,0.06,0.21,0.99,0.34
